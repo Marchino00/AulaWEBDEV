@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    height: 85px;
+}
+
+.nav-row {	height: 80px;
+	/* Applico flex */
+	display: flex;
+	/* Posiziono il mio contenuto agli estremi dx e sx */
+	justify-content: space-between;
+	/* allineo verticalmente il contenuto */
+	align-items: center;
+}
+
+#logo img{
+    width: 80px;
+    height: 80px;
+}
+
+.list ul{
+    display: flex;
+    padding: 5px;
+    border-color: #f00;
+    justify-content: center;
+    align-items: center;
+}
+
+.list ul li{
+    list-style: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-color: #f00;
+    font-size: 20px;
+    color: green;
+}
+
+
+.hero{
+    background-image: url(data:image/jpeg;base64,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);
+    background-size: cover;
+    background-repeat: center;
+    width: 100vw;
+    height: calc(100vh - 115px);
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+button{
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 12px;
+}
+button:hover{
+    background-color: #f00;
+}
+
+footer{
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    height: 30px;
+}
